@@ -1,0 +1,27 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.select{
+    -fx-background-color: #F78D14;
+}
+
+.correct{
+    -fx-background-color:  #0BB900;
+}
+
+.incorrect{
+    -fx-background-color: red;
+}
+
+.scoreincrease{
+    -fx-background-color:  #F78D14;
+}
+
+.already{
+    -fx-background-color: pink;
+}

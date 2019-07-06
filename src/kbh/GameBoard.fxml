@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="1200.0" style="-fx-background-color: #32124E;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kbh.GameBoardController">
+   <stylesheets>
+      <URL value="@gameboard.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane fx:id="ResultAnchorPane" layoutX="344.0" layoutY="85.0" prefHeight="231.0" prefWidth="508.0" style="-fx-background-color: #001D3E; -fx-border-color: #E7DD82;">
+         <children>
+            <Label layoutX="141.0" layoutY="22.0" text="CONGRATULATIONS" textAlignment="CENTER" textFill="#efefef">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="57.0" text="YOU WON" textFill="#dbcaa2">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="replayBtn" layoutX="402.0" layoutY="176.0" onAction="#replayBtnPushed" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #DCC358;" text="REPLAY">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="175.0" layoutY="118.0" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: #F78D14; -fx-border-color: #7592B7; -fx-border-width: 6px;" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="118.0">
+               <children>
+                  <StackPane layoutX="20.0" layoutY="29.0" prefHeight="88.0" prefWidth="266.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="totalLabel" prefHeight="19.0" prefWidth="117.0" text="Rs. 0" textAlignment="CENTER" textFill="#170b77">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="948.0" layoutY="14.0" prefHeight="316.0" prefWidth="199.0" style="-fx-background-color: #170B77; -fx-border-color: #DCC358;" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="32.0">
+         <children>
+            <VBox layoutX="119.0" layoutY="96.0" prefHeight="308.0" prefWidth="285.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="p14" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 1000  " textAlignment="CENTER" textFill="#0bb900">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p13" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 900" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p12" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 800" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p11" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 700" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p10" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 600" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p9" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 500" textAlignment="CENTER" textFill="#0bb900">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p8" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 400" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p7" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 300" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p6" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 200" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p5" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 100" textAlignment="CENTER" textFill="#0bb900">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p4" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 80" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p3" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 60" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p2" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS 40" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="p1" prefHeight="26.0" prefWidth="233.0">
+                     <children>
+                        <StackPane layoutX="9.0" layoutY="-62.0" prefHeight="88.0" prefWidth="233.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label text="RS. 20" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="46.0" layoutY="370.0" prefHeight="238.0" prefWidth="1111.0" style="-fx-background-color: #170B77;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="43.0">
+         <children>
+            <AnchorPane layoutX="122.0" layoutY="54.0" prefHeight="50.0" prefWidth="760.0" style="-fx-background-color: #001D3E;" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="229.0" AnchorPane.topAnchor="54.0">
+               <children>
+                  <StackPane layoutX="221.0" layoutY="13.0" prefHeight="54.0" prefWidth="760.0" style="-fx-border-color: #E7DD82;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="QuesLabel" text="Label" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="122.0" layoutY="136.0" prefHeight="80.0" prefWidth="760.0" style="-fx-background-color: #4916CE;" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="229.0">
+               <children>
+                  <VBox layoutX="106.0" layoutY="-86.0" prefHeight="100.0" prefWidth="932.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4916CE;">
+                           <children>
+                              <AnchorPane prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #4916CE;" />
+                              <AnchorPane prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <StackPane layoutX="-86.0" layoutY="-61.0" prefHeight="38.0" prefWidth="50.0" style="-fx-border-color: #DCC358; -fx-border-width: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label prefHeight="27.0" prefWidth="17.0" text="A." textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="AlabelAnchorpane" prefHeight="38.0" prefWidth="240.0">
+                                 <children>
+                                    <StackPane layoutX="-7.0" layoutY="-61.0" prefHeight="89.0" prefWidth="308.0" style="-fx-border-color: #DCC358;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="alabel" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton fx:id="ABtn" onAction="#ABtnPushed" prefHeight="46.0" prefWidth="306.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="385.0" layoutY="10.0" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #4916CE;" />
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <StackPane layoutX="-86.0" layoutY="-61.0" prefHeight="89.0" prefWidth="114.0" style="-fx-border-color: #DCC358; -fx-border-width: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label prefWidth="17.0" text="B." textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="BlabelAnchorPane" layoutX="53.0" layoutY="10.0" prefHeight="38.0" prefWidth="240.0">
+                                 <children>
+                                    <StackPane layoutX="-21.0" layoutY="-51.0" prefHeight="99.0" prefWidth="308.0" style="-fx-border-color: #DCC358;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="blabel" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton fx:id="BBtn" onAction="#BBtnPushed" prefHeight="44.0" prefWidth="305.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #4916CE;">
+                           <children>
+                              <AnchorPane prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: #4916CE;" />
+                              <AnchorPane prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <StackPane layoutX="-86.0" layoutY="-67.0" prefHeight="83.0" prefWidth="114.0" style="-fx-border-color: #DCC358; -fx-border-width: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label prefHeight="27.0" prefWidth="17.0" text="C." textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="ClabelAnchorPane" prefHeight="38.0" prefWidth="240.0">
+                                 <children>
+                                    <StackPane layoutX="74.0" layoutY="-51.0" prefHeight="99.0" prefWidth="308.0" style="-fx-border-color: #DCC358;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="clabel" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton fx:id="CBtn" onAction="#CBtnPushed" prefHeight="44.0" prefWidth="305.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="385.0" layoutY="10.0" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #4916CE;" />
+                              <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="38.0" prefWidth="50.0" style="-fx-background-color: black;">
+                                 <children>
+                                    <StackPane layoutX="-78.0" layoutY="-75.0" prefHeight="75.0" prefWidth="122.0" style="-fx-border-color: #DCC358; -fx-border-width: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label prefWidth="17.0" text="D." textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="DlabelAnchorPane" layoutX="53.0" layoutY="10.0" prefHeight="38.0" prefWidth="240.0">
+                                 <children>
+                                    <StackPane layoutX="64.0" layoutY="-51.0" prefHeight="99.0" prefWidth="308.0" style="-fx-border-color: #DCC358;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="dlabel" textAlignment="CENTER" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton fx:id="DBtn" onAction="#DBtnPushed" prefHeight="44.0" prefWidth="306.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox layoutX="1000.0" layoutY="54.0" prefHeight="167.0" prefWidth="134.0" spacing="10.0" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="54.0">
+               <children>
+                  <JFXButton fx:id="OptionBtn" onAction="#OptionBtnPushed" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #DCC358;" text="Options">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="NxtBtn" onAction="#NxtBtnPushed" prefHeight="62.0" prefWidth="151.0" style="-fx-background-color: #DCC358;" text="NEXT">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="CheckBtn" onAction="#checkBtnPushed" prefHeight="99.0" prefWidth="149.0" style="-fx-background-color: #DCC358;" text="CHECK">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="46.0" layoutY="85.0" prefHeight="273.0" prefWidth="134.0" style="-fx-background-color: #170B77;" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="85.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="17.0" prefHeight="273.0" prefWidth="134.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane prefHeight="75.0" prefWidth="134.0">
+                     <children>
+                        <JFXButton onAction="#quitBtnPushed" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #f7ca18;" text="Quit">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="75.0" prefWidth="134.0">
+                     <children>
+                        <AnchorPane prefHeight="50.0" prefWidth="72.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="36.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Ate.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton fx:id="expertBtn" layoutX="31.0" layoutY="9.0" onAction="#expertBtnPushed" opacity="0.3" prefHeight="50.0" prefWidth="72.0" text="Button" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="75.0" prefWidth="134.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="50.0" fitWidth="72.0" layoutX="35.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Classic5050.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton fx:id="fiftyBtn" layoutX="31.0" layoutY="9.0" onAction="#fiftyBtnPushed" prefHeight="50.0" prefWidth="72.0" text="Button" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="75.0" prefWidth="134.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane layoutX="24.0" layoutY="10.0" prefHeight="50.0" prefWidth="86.0">
+                                 <children>
+                                    <StackPane layoutX="-11.0" layoutY="7.0" prefHeight="67.0" prefWidth="203.0" style="-fx-border-color: white; -fx-border-width: 5px;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                                       <children>
+                                          <Label fx:id="QNoLabel" text="Label" textFill="WHITE">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="247.0" layoutY="14.0" prefHeight="353.0" prefWidth="701.0" AnchorPane.leftAnchor="252.0" AnchorPane.rightAnchor="252.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <StackPane layoutX="214.0" layoutY="-9.0" prefHeight="353.0" prefWidth="696.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="358.0" fitWidth="689.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/crore.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="46.0" layoutY="33.0" prefHeight="43.0" prefWidth="238.0" style="-fx-border-color: #00e640; -fx-border-width: 3px;">
+         <children>
+            <StackPane layoutX="-37.0" layoutY="-68.0" prefHeight="82.0" prefWidth="238.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="playerLabel" prefHeight="53.0" prefWidth="221.0" text="Rabinson Ghatani" textFill="#ffcb05">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
